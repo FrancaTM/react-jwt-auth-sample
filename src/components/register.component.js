@@ -57,8 +57,8 @@ export default class Register extends Component {
 
     this.state = {
       username: "",
-      password: "",
       email: "",
+      password: "",
       successful: false,
       message: "",
     };
@@ -76,7 +76,7 @@ export default class Register extends Component {
     this.setState({ email: e.target.value });
   }
 
-  handleLogin(e) {
+  handleRegister(e) {
     e.preventDefault();
 
     this.setState({ message: "", successful: false });
@@ -86,8 +86,8 @@ export default class Register extends Component {
     if (this.checkBtn.context._errors.length === 0) {
       AuthService.register(
         this.state.username,
-        this.state.password,
-        this.state.email
+        this.state.email,
+        this.state.password
       ).then(
         (response) => {
           this.setState({

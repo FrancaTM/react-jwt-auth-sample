@@ -61,7 +61,7 @@ class App extends Component {
 
             {showModeratorBoard && (
               <li className="nav-item">
-                <Link to={"/mod"} className="nav-link">
+                <Link to={"/moderator"} className="nav-link">
                   Moderator Board
                 </Link>
               </li>

@@ -8,7 +8,7 @@ import AuthService from "../services/auth.service";
 const required = (value) => {
   if (!value) {
     return (
-      <div className="alert alret-danger" role="alert">
+      <div className="alert alert-danger" role="alert">
         This field is required!
       </div>
     );
